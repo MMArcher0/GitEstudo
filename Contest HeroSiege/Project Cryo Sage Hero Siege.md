@@ -163,3 +163,10 @@ Class weapon type SPELL
             28% chance to Frost Burn enemies on hit
             Frost Burn can stack only 8 times
             8% Frost Burn damage per talent level
+
+        7 (Passive) Storm Crescent
+            2.25% increase AoE of Frost Weather per talent level
+            3% increase tik rate of Frost Weather per talent level
+
+        8 (Active) Frost Aura
+            
