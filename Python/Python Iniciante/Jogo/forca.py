@@ -1,5 +1,6 @@
 import random
 
+
 # Jogo da forca
 def jogar_forca():
     # Apresentação inicial do jogo
@@ -16,12 +17,12 @@ def jogar_forca():
     acertou = False
     erros = 0
 
-    # Abre o arquivo com as frutas
-    frutas = open("frutas.txt", "r")
+    # Abre o arquivo com as frutas e fecha
+    with open("frutas.txt", "r") as frutas:
 
-    # Le o arquivo linha por linha, e adiciona numa lista.
-    for fruta in frutas:
-        lista_frutas.append(fruta.strip().lower())
+        # Le o arquivo linha por linha, e adiciona numa lista
+        for fruta in frutas:
+            lista_frutas.append(fruta.strip().lower())
 
     # Seleciona um valor pseudo random entre 0 e o total de palavras e define como a palavra_secreta
     palavra_secreta = random.randrange(0, len(lista_frutas))
